@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Nexo Digital ayuda a autónomos y pequeñas empresas con páginas web, presencia digital y automatización sencilla.">
+  <meta name="theme-color" content="#0b1224">
+  <title>Nexo Digital | Soluciones digitales para tu negocio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0b1224;--panel:#111d35;--panel2:#162541;--text:#f5f7fb;--muted:#b4c2d8;--blue:#55b8ff;--cyan:#79e0e2;--line:rgba(255,255,255,.12);--light:#f5f8fc;--ink:#14213a}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"DM Sans",sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+    .nav{position:sticky;top:0;z-index:10;background:rgba(11,18,36,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .navin{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font:800 1.2rem Manrope,sans-serif;letter-spacing:.06em}.brand span{color:var(--blue)}
+    .links{display:flex;gap:26px;color:var(--muted);font-size:.92rem}.links a:hover{color:white}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:12px;background:linear-gradient(120deg,#2387e8,#4bbce8);color:#061326;font-weight:800;border:0;cursor:pointer;box-shadow:0 10px 28px rgba(44,154,225,.2)}
+    .btn.secondary{background:transparent;color:white;border:1px solid var(--line);box-shadow:none}
+    .hero{padding:92px 0 78px;overflow:hidden;position:relative;background:radial-gradient(ellipse at 78% 22%,rgba(43,142,219,.23),transparent 42%),radial-gradient(ellipse at 12% 80%,rgba(54,205,207,.12),transparent 36%)}
+    .hero-grid{display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:54px}
+    .eyebrow{display:inline-flex;gap:9px;align-items:center;color:var(--cyan);font-weight:700;font-size:.82rem;letter-spacing:.13em;text-transform:uppercase}
+    .dot{width:8px;height:8px;border-radius:50%;background:var(--cyan);box-shadow:0 0 15px var(--cyan)}
+    h1,h2,h3{font-family:Manrope,sans-serif;line-height:1.13;margin:0 0 18px}h1{font-size:clamp(2.65rem,5.3vw,4.7rem);letter-spacing:-.055em;margin-top:18px}h1 em{font-style:normal;color:var(--blue)}
+    .lead{font-size:1.12rem;color:var(--muted);max-width:600px;margin:0 0 28px}.actions{display:flex;gap:13px;flex-wrap:wrap}
+    .visual{min-height:370px;position:relative;display:grid;place-items:center}
+    .orb{width:min(340px,80vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 30%,#8ce7ed 0,#3799db 24%,#1a477b 55%,#101a32 72%);filter:drop-shadow(0 20px 70px rgba(50,161,226,.25));position:relative}
+    .orb:before,.orb:after{content:"";position:absolute;inset:-24px;border:1px solid rgba(112,208,255,.35);border-radius:50%;transform:rotate(-25deg) scaleY(.38)}
+    .orb:after{transform:rotate(55deg) scaleY(.38)}
+    .float{position:absolute;background:rgba(18,34,61,.88);border:1px solid var(--line);border-radius:16px;padding:14px 17px;box-shadow:0 15px 40px #050b18;color:#dceaff}
+    .float strong{display:block;font:700 1rem Manrope}.float small{color:var(--muted)}.f1{top:35px;left:0}.f2{bottom:36px;right:-4px}
+    section{padding:82px 0}.section-head{max-width:680px;margin-bottom:38px}.section-head p{color:var(--muted);margin:0}.kicker{color:#63c7ec;text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;font-weight:800}
+    h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-.04em;margin:10px 0 14px}
+    .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{padding:24px;border-radius:18px;border:1px solid var(--line);background:linear-gradient(155deg,var(--panel),#0e192e);min-height:225px}
+    .ico{width:44px;height:44px;border-radius:13px;background:rgba(77,178,240,.13);display:grid;place-items:center;color:var(--blue);font-size:1.3rem;margin-bottom:18px}
+    .card h3{font-size:1.08rem;margin-bottom:9px}.card p{font-size:.92rem;color:var(--muted);margin:0}
+    .band{background:var(--light);color:var(--ink)}.band .section-head p{color:#5c6a80}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{background:white;border:1px solid #e2e9f2;border-radius:17px;padding:24px}
+    .num{font:800 1.5rem Manrope;color:#1686d4}.step p{color:#5c6a80;margin:0}
+    .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.price{border:1px solid var(--line);background:var(--panel);border-radius:18px;padding:26px}.price.featured{border-color:rgba(85,184,255,.7);box-shadow:0 0 0 1px rgba(85,184,255,.2)}
+    .price h3{margin-bottom:8px}.amount{font:800 2rem Manrope;margin:14px 0 4px}.amount small{font:500 .85rem "DM Sans";color:var(--muted)}.price p,.price li{color:var(--muted);font-size:.92rem}.price ul{padding-left:18px;min-height:110px}
+    .note{color:var(--muted);font-size:.83rem;margin-top:20px}
+    .contact{background:linear-gradient(120deg,#10213c,#102d4b);border:1px solid var(--line);border-radius:24px;padding:38px;display:grid;grid-template-columns:1fr 1fr;gap:35px}
+    .contact p{color:var(--muted)}.contact-box{background:rgba(4,12,26,.32);border:1px solid var(--line);border-radius:16px;padding:20px}
+    label{display:block;font-size:.86rem;color:#d7e5f7;margin:0 0 6px}input,textarea{width:100%;padding:12px 13px;border:1px solid var(--line);background:#0b1830;color:white;border-radius:10px;font:inherit;margin-bottom:13px}textarea{min-height:100px;resize:vertical}
+    .formhint{font-size:.78rem;color:var(--muted)}footer{padding:32px 0;color:var(--muted);font-size:.84rem;border-top:1px solid var(--line);margin-top:80px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    @media(max-width:850px){.hero-grid{grid-template-columns:1fr}.visual{min-height:300px}.cards{grid-template-columns:repeat(2,1fr)}.contact{grid-template-columns:1fr}.links{display:none}}
+    @media(max-width:560px){.wrap{width:min(100% - 28px,1120px)}.hero{padding:65px 0 45px}section{padding:62px 0}.cards,.steps,.pricing{grid-template-columns:1fr}.visual{min-height:260px}.orb{width:230px}.float{font-size:.85rem}.f1{left:-3px}.f2{right:-3px}.contact{padding:24px}}
+  </style>
+</head>
+<body>
+<header class="nav"><div class="wrap navin">
+  <a class="brand" href="#inicio">NEXO<span> DIGITAL</span></a>
+  <nav class="links"><a href="#servicios">Servicios</a><a href="#proceso">Cómo trabajamos</a><a href="#precios">Planes</a><a href="#contacto">Contacto</a></nav>
+  <a class="btn" href="#contacto">Hablemos</a>
+</div></header>
+
+<main>
+<section class="hero" id="inicio"><div class="wrap hero-grid">
+  <div>
+    <div class="eyebrow"><span class="dot"></span> Soluciones digitales para negocios</div>
+    <h1>Tu negocio merece estar <em>un paso adelante.</em></h1>
+    <p class="lead">Ayudamos a autónomos y pequeñas empresas a mejorar su presencia en Internet, presentar mejor sus servicios y ahorrar tiempo con herramientas digitales e inteligencia artificial.</p>
+    <div class="actions"><a class="btn" href="#contacto">Cuéntanos qué necesitas</a><a class="btn secondary" href="#servicios">Ver servicios</a></div>
+  </div>
+  <div class="visual" aria-label="Ilustración abstracta tecnológica"><div class="orb"></div><div class="float f1"><strong>Presencia digital</strong><small>Una imagen profesional</small></div><div class="float f2"><strong>Procesos más ágiles</strong><small>Menos tareas repetitivas</small></div></div>
+</div></section>
+
+<section id="servicios"><div class="wrap">
+  <div class="section-head"><div class="kicker">Qué podemos hacer</div><h2>Herramientas digitales para crecer.</h2><p>Soluciones prácticas, adaptadas al tamaño y las necesidades de tu negocio. Empezamos por lo que más valor te aporte.</p></div>
+  <div class="cards">
+    <article class="card"><div class="ico">⌘</div><h3>Diseño web</h3><p>Páginas claras y adaptadas a móvil para explicar tus servicios y facilitar que te contacten.</p></article>
+    <article class="card"><div class="ico">✦</div><h3>Contenido con IA</h3><p>Textos, ideas y creatividades para comunicar mejor tus productos y servicios.</p></article>
+    <article class="card"><div class="ico">▤</div><h3>Catálogos digitales</h3><p>Presentaciones ordenadas de servicios, trabajos y tarifas para compartir fácilmente.</p></article>
+    <article class="card"><div class="ico">↗</div><h3>Automatización sencilla</h3><p>Organización de consultas y tareas repetitivas con herramientas adecuadas a cada caso.</p></article>
+  </div>
+</div></section>
+
+<section class="band" id="proceso"><div class="wrap">
+  <div class="section-head"><div class="kicker">Proceso sencillo</div><h2>De la idea a una solución útil.</h2><p>Sin complicaciones: entendemos el objetivo, proponemos el alcance y validamos cada paso contigo.</p></div>
+  <div class="steps">
+    <article class="step"><div class="num">01</div><h3>Nos cuentas</h3><p>Explícanos tu negocio, qué quieres mejorar y qué resultado esperas.</p></article>
+    <article class="step"><div class="num">02</div><h3>Preparamos una propuesta</h3><p>Definimos entregables, plazo y precio antes de empezar. Sin sorpresas.</p></article>
+    <article class="step"><div class="num">03</div><h3>Lo ponemos en marcha</h3><p>Revisas el resultado, pedimos tu aprobación y hacemos la entrega acordada.</p></article>
+  </div>
+</div></section>
+
+<section id="precios"><div class="wrap">
+  <div class="section-head"><div class="kicker">Planes orientativos</div><h2>Un punto de partida claro.</h2><p>Precios de lanzamiento sugeridos para validar el servicio. El presupuesto final dependerá del alcance y se confirmará por escrito.</p></div>
+  <div class="pricing">
+    <article class="price"><h3>Presencia básica</h3><p>Para empezar a mostrar tu negocio.</p><div class="amount">Desde 79 €</div><ul><li>Web de una página</li><li>Diseño adaptable a móvil</li><li>Información y contacto</li></ul><a class="btn secondary" href="#contacto">Consultar</a></article>
+    <article class="price featured"><h3>Negocio visible</h3><p>Para presentar mejor tus servicios.</p><div class="amount">Desde 129 €</div><ul><li>Web de varias secciones</li><li>Textos iniciales</li><li>Catálogo o listado de servicios</li></ul><a class="btn" href="#contacto">Consultar</a></article>
+    <article class="price"><h3>Contenido mensual</h3><p>Para mantener tus canales activos.</p><div class="amount">Desde 59 € <small>/ mes</small></div><ul><li>Pack de publicaciones acordado</li><li>Ideas y textos para redes</li><li>Calendario de contenido</li></ul><a class="btn secondary" href="#contacto">Consultar</a></article>
+  </div>
+  <p class="note">Importes orientativos, no son una oferta vinculante. No incluyen dominio, herramientas de pago, inversión publicitaria ni servicios de terceros. Antes de vender, concreta alcance, impuestos, plazos, revisiones y condiciones con cada cliente.</p>
+</div></section>
+
+<section id="contacto"><div class="wrap">
+  <div class="contact">
+    <div><div class="kicker">Hablemos</div><h2>Cuéntanos qué quieres mejorar.</h2><p>Cuéntanos brevemente qué hace tu negocio y qué necesitas. Te responderemos para valorar una propuesta sin compromiso.</p><div class="contact-box"><strong>Contacto directo</strong><p style="margin-bottom:4px">Añade aquí tu correo profesional:</p><a id="emailText" href="mailto:TU_CORREO@EJEMPLO.COM">TU_CORREO@EJEMPLO.COM</a><p class="formhint">Sustituye el correo de ejemplo antes de publicar la web.</p></div></div>
+    <div><form id="contactForm">
+      <label for="name">Nombre</label><input id="name" name="name" required placeholder="Tu nombre">
+      <label for="business">Empresa o actividad</label><input id="business" name="business" placeholder="Nombre de tu negocio">
+      <label for="service">¿Qué necesitas?</label><input id="service" name="service" required placeholder="Web, catálogo, contenido...">
+      <label for="message">Cuéntanos un poco más</label><textarea id="message" name="message" placeholder="Describe tu idea o necesidad"></textarea>
+      <button class="btn" type="submit">Preparar correo</button>
+      <p class="formhint">Este formulario abre tu aplicación de correo; no almacena ni envía datos a un servidor.</p>
+    </form></div>
+  </div>
+</div></section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> Nexo Digital · Nombre provisional</span><span>Privacidad · Aviso legal: completar antes de operar comercialmente</span></div></footer>
+<script>
+  // IMPORTANTE: sustituye este correo por una dirección real antes de publicar.
+  const CONTACT_EMAIL = "TU_CORREO@EJEMPLO.COM";
+  document.getElementById("year").textContent = new Date().getFullYear();
+  document.getElementById("emailText").textContent = CONTACT_EMAIL;
+  document.getElementById("emailText").href = "mailto:" + CONTACT_EMAIL;
+  document.getElementById("contactForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    const d = new FormData(this);
+    const subject = encodeURIComponent("Consulta desde la web de Nexo Digital");
+    const body = encodeURIComponent(
+      "Nombre: " + d.get("name") + "\nEmpresa: " + d.get("business") +
+      "\nNecesidad: " + d.get("service") + "\nMensaje: " + d.get("message")
+    );
+    if (CONTACT_EMAIL.includes("EJEMPLO")) {
+      alert("Antes de usar el formulario, sustituye TU_CORREO@EJEMPLO.COM por tu correo real en index.html.");
+      return;
+    }
+    window.location.href = "mailto:" + CONTACT_EMAIL + "?subject=" + subject + "&body=" + body;
+  });
+</script>
+</body>
+</html>
